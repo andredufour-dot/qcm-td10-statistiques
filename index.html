@@ -24,7 +24,7 @@ $('finish').onclick=()=>{completed=true;const score=answers.filter((a,i)=>a===qu
   welcome.id = 'welcome';
   welcome.innerHTML = `<h2>Avant de commencer</h2><p>Choisissez un nom et utilisez-le à chaque tentative pour que l’enseignant puisse suivre votre progression.</p>
     <form id="start-form"><label for="start-alias">Votre nom</label><br><input id="start-alias" required minlength="2" maxlength="60" autocomplete="off" style="width:100%;max-width:360px;padding:12px;margin:12px 0;border:1px solid var(--line);border-radius:8px">
-    <p class="micro">À la fin, cliquez sur « Envoyer mon résultat » pour transmettre votre nom, vos réponses, votre score, la date et la durée indicative au tableau Google Sheets privé de l’enseignant. La note et le corrigé s’affichent après confirmation de l’envoi. Vous pouvez laisser des questions sans réponse (0 point).</p>
+    
     <button class="btn primary" type="submit">Commencer le QCM</button><p id="start-error" role="status"></p></form>`;
   quizPanel.before(welcome);
   quizPanel.classList.add('hidden');
