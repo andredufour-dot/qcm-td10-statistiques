@@ -54,7 +54,7 @@ $('finish').onclick=()=>{completed=true;const score=answers.filter((a,i)=>a===qu
     section.className = 'card';
     section.setAttribute('aria-labelledby', 'tracking-title');
     section.innerHTML = `<h2 id="tracking-title">Envoyer mes réponses pour voir ma note</h2>
-      <p>Pour suivre votre progression, utilisez le même nom à chaque tentative. Votre nom, vos réponses, votre score et la date seront transmis à l’enseignant uniquement si vous cliquez sur « Envoyer mon résultat ».</p>
+      <p>Pour suivre votre progression, utilisez le même nom à chaque tentative. </p>
       <form id="tracking-form"><label for="student-alias">Votre nom</label><br>
       <input id="student-alias" name="alias" type="text" required minlength="2" maxlength="60" autocomplete="off" style="width:100%;max-width:360px;padding:10px;margin:10px 0;border:1px solid var(--line);border-radius:8px">
       <div><button class="btn primary" type="submit">Envoyer mon résultat</button></div>
